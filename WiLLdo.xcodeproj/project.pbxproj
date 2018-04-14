@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F79A06C72081B7A800CDF255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A06C62081B7A800CDF255 /* AppDelegate.swift */; };
-		F79A06C92081B7A800CDF255 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A06C82081B7A800CDF255 /* ViewController.swift */; };
+		F79A06C92081B7A800CDF255 /* WiLLdoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A06C82081B7A800CDF255 /* WiLLdoListVC.swift */; };
 		F79A06CC2081B7A800CDF255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79A06CA2081B7A800CDF255 /* Main.storyboard */; };
 		F79A06CF2081B7A800CDF255 /* WiLLdo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F79A06CD2081B7A800CDF255 /* WiLLdo.xcdatamodeld */; };
 		F79A06D12081B7AA00CDF255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79A06D02081B7AA00CDF255 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		F79A06C32081B7A800CDF255 /* WiLLdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiLLdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79A06C62081B7A800CDF255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F79A06C82081B7A800CDF255 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F79A06C82081B7A800CDF255 /* WiLLdoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiLLdoListVC.swift; sourceTree = "<group>"; };
 		F79A06CB2081B7A800CDF255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F79A06CE2081B7A800CDF255 /* WiLLdo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WiLLdo.xcdatamodel; sourceTree = "<group>"; };
 		F79A06D02081B7AA00CDF255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,14 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				F79A06C62081B7A800CDF255 /* AppDelegate.swift */,
-				F79A06C82081B7A800CDF255 /* ViewController.swift */,
-				F79A06CA2081B7A800CDF255 /* Main.storyboard */,
-				F79A06D02081B7AA00CDF255 /* Assets.xcassets */,
-				F79A06D22081B7AA00CDF255 /* LaunchScreen.storyboard */,
+				F79A06DB2081B7C800CDF255 /* Controllers */,
+				F79A06DC2081B7DA00CDF255 /* Views */,
+				F79A06DD2081B7F500CDF255 /* Supporting Files */,
+				F79A06DE2081B80B00CDF255 /* Data Model */,
 				F79A06D52081B7AA00CDF255 /* Info.plist */,
-				F79A06CD2081B7A800CDF255 /* WiLLdo.xcdatamodeld */,
 			);
 			path = WiLLdo;
+			sourceTree = "<group>";
+		};
+		F79A06DB2081B7C800CDF255 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F79A06C82081B7A800CDF255 /* WiLLdoListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F79A06DC2081B7DA00CDF255 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F79A06CA2081B7A800CDF255 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F79A06DD2081B7F500CDF255 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F79A06D02081B7AA00CDF255 /* Assets.xcassets */,
+				F79A06D22081B7AA00CDF255 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F79A06DE2081B80B00CDF255 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				F79A06CD2081B7A800CDF255 /* WiLLdo.xcdatamodeld */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F79A06CF2081B7A800CDF255 /* WiLLdo.xcdatamodeld in Sources */,
-				F79A06C92081B7A800CDF255 /* ViewController.swift in Sources */,
+				F79A06C92081B7A800CDF255 /* WiLLdoListVC.swift in Sources */,
 				F79A06C72081B7A800CDF255 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
