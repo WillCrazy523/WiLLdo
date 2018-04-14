@@ -10,9 +10,48 @@
     </dependencies>
     <scenes>
         <!--WiLLdo-->
+        <scene sceneID="Mvq-jH-OIU">
+            <objects>
+                <tableViewController id="N7S-l5-oT6" customClass="CategoryVC" customModule="WiLLdo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="glC-hC-heq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="fzb-Ni-3fY">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fzb-Ni-3fY" id="3br-h1-NWz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="N7S-l5-oT6" id="q7K-hy-CZg"/>
+                            <outlet property="delegate" destination="N7S-l5-oT6" id="4aQ-Hy-Mrh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="WiLLdo" id="UIf-cn-j46">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tIa-Ak-pbs">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="N7S-l5-oT6" id="Mzz-Tx-OAl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="PqH-xR-bvK" kind="show" identifier="goToItems" id="pY3-Y1-IkW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3gP-M7-xok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="125"/>
+        </scene>
+        <!--Items-->
         <scene sceneID="LIt-MQ-vVS">
             <objects>
-                <tableViewController id="PqH-xR-bvK" customClass="WiLLdoListVC" customModule="WiLLdo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="PqH-xR-bvK" customClass="TodoListVC" customModule="WiLLdo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Fk-lP-Jyp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +79,7 @@
                             <outlet property="delegate" destination="PqH-xR-bvK" id="Dwh-dt-H3h"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="WiLLdo" id="Voo-jU-5X1">
+                    <navigationItem key="navigationItem" title="Items" id="Voo-jU-5X1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hOt-bw-yOF">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -68,12 +107,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="PqH-xR-bvK" kind="relationship" relationship="rootViewController" id="o1W-uF-Uda"/>
+                        <segue destination="N7S-l5-oT6" kind="relationship" relationship="rootViewController" id="68e-t3-M3n"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2b-vd-XUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959.20000000000005" y="124.58770614692655"/>
+            <point key="canvasLocation" x="9" y="125"/>
         </scene>
     </scenes>
 </document>
