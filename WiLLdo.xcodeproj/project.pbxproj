@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2DEFA20803001D8D6A2D7A1F /* Pods_WiLLdo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7AB1F25C7C87E3855BC5B4 /* Pods_WiLLdo.framework */; };
+		F7632BF22082B56E00F24239 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7632BF12082B56E00F24239 /* Item.swift */; };
+		F7632BF42082B57E00F24239 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7632BF32082B57E00F24239 /* Category.swift */; };
 		F79A06C72081B7A800CDF255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A06C62081B7A800CDF255 /* AppDelegate.swift */; };
 		F79A06C92081B7A800CDF255 /* TodoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A06C82081B7A800CDF255 /* TodoListVC.swift */; };
 		F79A06CC2081B7A800CDF255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79A06CA2081B7A800CDF255 /* Main.storyboard */; };
-		F79A06CF2081B7A800CDF255 /* WiLLdo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F79A06CD2081B7A800CDF255 /* WiLLdo.xcdatamodeld */; };
 		F79A06D12081B7AA00CDF255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79A06D02081B7AA00CDF255 /* Assets.xcassets */; };
 		F79A06D42081B7AA00CDF255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79A06D22081B7AA00CDF255 /* LaunchScreen.storyboard */; };
 		F7B963F22081D15C00F12D2F /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B963F12081D15C00F12D2F /* CategoryVC.swift */; };
@@ -21,11 +22,12 @@
 		3C9AD493055F85E4EDCDD531 /* Pods-WiLLdo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiLLdo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WiLLdo/Pods-WiLLdo.debug.xcconfig"; sourceTree = "<group>"; };
 		8A7AB1F25C7C87E3855BC5B4 /* Pods_WiLLdo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiLLdo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FD3B975628FC4FFBBE6A80 /* Pods-WiLLdo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiLLdo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WiLLdo/Pods-WiLLdo.release.xcconfig"; sourceTree = "<group>"; };
+		F7632BF12082B56E00F24239 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F7632BF32082B57E00F24239 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F79A06C32081B7A800CDF255 /* WiLLdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiLLdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79A06C62081B7A800CDF255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F79A06C82081B7A800CDF255 /* TodoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVC.swift; sourceTree = "<group>"; };
 		F79A06CB2081B7A800CDF255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F79A06CE2081B7A800CDF255 /* WiLLdo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WiLLdo.xcdatamodel; sourceTree = "<group>"; };
 		F79A06D02081B7AA00CDF255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F79A06D32081B7AA00CDF255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F79A06D52081B7AA00CDF255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,7 +123,8 @@
 		F79A06DE2081B80B00CDF255 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				F79A06CD2081B7A800CDF255 /* WiLLdo.xcdatamodeld */,
+				F7632BF32082B57E00F24239 /* Category.swift */,
+				F7632BF12082B56E00F24239 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -240,10 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F79A06CF2081B7A800CDF255 /* WiLLdo.xcdatamodeld in Sources */,
+				F7632BF22082B56E00F24239 /* Item.swift in Sources */,
 				F79A06C92081B7A800CDF255 /* TodoListVC.swift in Sources */,
 				F7B963F22081D15C00F12D2F /* CategoryVC.swift in Sources */,
 				F79A06C72081B7A800CDF255 /* AppDelegate.swift in Sources */,
+				F7632BF42082B57E00F24239 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,19 +447,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F79A06CD2081B7A800CDF255 /* WiLLdo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F79A06CE2081B7A800CDF255 /* WiLLdo.xcdatamodel */,
-			);
-			currentVersion = F79A06CE2081B7A800CDF255 /* WiLLdo.xcdatamodel */;
-			path = WiLLdo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F79A06BB2081B7A800CDF255 /* Project object */;
 }
