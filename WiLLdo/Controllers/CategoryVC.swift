@@ -90,7 +90,7 @@ class CategoryVC: SwipeTableVC {
         tableView.reloadData()
     }
     
-    //MARK: - Delete Date From Swipe
+    //MARK: - Delete Data From Swipe
     
     override func updateModel(at indexPath: IndexPath) {
         
@@ -109,6 +109,41 @@ class CategoryVC: SwipeTableVC {
             tableView.reloadData()
         }
     }
+    
+    //MARK: - Edit Data
+//    override func updateEdit(at indexPath: IndexPath) {
+//        super.updateEdit(at: indexPath)
+//        
+//        var textField = UITextField()
+//        
+//        let alert = UIAlertController(title: "Add New Category", message: "", preferredStyle: .alert)
+//        
+//        let action = UIAlertAction(title: "Add", style: .default) { (action) in
+//            
+//            if let categoryForEdit = self.categories?[indexPath.row] {
+//                do {
+//                    try self.realm.write {
+//                        self.realm.add(categoryForEdit)
+//                    }
+//                }
+//                catch {
+//                    print("Error editing category, \(error)")
+//                }
+//            }
+//        }
+//        
+//        alert.addAction(action)
+//        
+//        alert.addTextField { (field) in
+//            textField = field
+//            textField.placeholder = "Add a new category"
+//        }
+//
+//        present(alert, animated: true, completion: nil)
+//        
+//        tableView.reloadData()
+//    }
+    
 
     //MARK: - Add New Categories
     

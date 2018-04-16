@@ -173,6 +173,8 @@ class TodoListVC: SwipeTableVC {
     
     override func updateModel(at indexPath: IndexPath) {
         
+        super.updateModel(at: indexPath)
+        
         if let item = todoItems?[indexPath.row] {
             
             do {

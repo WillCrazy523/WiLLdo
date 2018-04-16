@@ -14,7 +14,7 @@ class SwipeTableVC: UITableViewController, SwipeTableViewCellDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rowHeight = 80.0
+        tableView.rowHeight = 70.0
 
     }
     
@@ -43,16 +43,28 @@ class SwipeTableVC: UITableViewController, SwipeTableViewCellDelegate {
             
         }
         
+        let more = SwipeAction(style: .default, title: "Edit") { action, indexPath in
+            
+            print("Edit Cell")
+            
+            //self.updateEdit(at: indexPath)
+        }
+        
         // customize the action appearance
         deleteAction.image = UIImage(named: "delete-icon")
+        more.image = UIImage(named: "more-icon")
         
-        return [deleteAction]
+        return [deleteAction, more]
     }
     
     func updateModel(at indexPath: IndexPath) {
         //Update our data model
         print("Item deleted from superclass")
     }
+    
+//    func updateEdit(at indexPath: IndexPath) {
+//        print("Item edit from superclass")
+//    }
     
 //    func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeTableOptions {
 //        var options = SwipeTableOptions()
@@ -61,6 +73,18 @@ class SwipeTableVC: UITableViewController, SwipeTableViewCellDelegate {
 //        return options
 //    }
     
+//    func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeTableOptions {
+//        
+//        return SwipeTableOptions()
+//    }
+//    
+//    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) {
+//        
+//    }
+//    
+//    func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?, for orientation: SwipeActionsOrientation) {
+//        
+//    }
     
 }
 
