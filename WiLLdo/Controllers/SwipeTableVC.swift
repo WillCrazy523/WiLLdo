@@ -49,17 +49,18 @@ class SwipeTableVC: UITableViewController, SwipeTableViewCellDelegate {
         return [deleteAction]
     }
     
-    func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeTableOptions {
-        var options = SwipeTableOptions()
-        options.expansionStyle = .destructive
-        //options.transitionStyle = .border
-        return options
-    }
-    
     func updateModel(at indexPath: IndexPath) {
         //Update our data model
         print("Item deleted from superclass")
     }
+    
+//    func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeTableOptions {
+//        var options = SwipeTableOptions()
+//        options.expansionStyle = .destructive
+//        //options.transitionStyle = .border
+//        return options
+//    }
+    
     
 }
 

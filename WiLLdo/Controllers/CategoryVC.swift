@@ -23,7 +23,7 @@ class CategoryVC: SwipeTableVC {
         loadCategories()
         
         tableView.separatorStyle = .none
-
+        
     }
 
     //MARK: - TableView Datasource Methods
@@ -105,6 +105,8 @@ class CategoryVC: SwipeTableVC {
             catch {
                 print("Error deleting category, \(error)")
             }
+            
+            tableView.reloadData()
         }
     }
 

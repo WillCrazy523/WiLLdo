@@ -183,6 +183,8 @@ class TodoListVC: SwipeTableVC {
             catch {
                 print("Error deleting Item, \(error)")
             }
+            
+            tableView.reloadData()
         }
     }    
 }
